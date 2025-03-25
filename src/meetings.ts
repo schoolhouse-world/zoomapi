@@ -106,7 +106,7 @@ export type GetMeetingInvitationResponse = {
   invitation: string
 }
 export type GetMeetingRecordingsResponse = RecordingMeeting
-export type UpdateMeetingSurveyParams = {
+export type UpdateMeetingSurveyBody = {
 	third_party_survey: string
 }
 
@@ -199,11 +199,11 @@ export default function (zoomRequest: ReturnType<typeof request>) {
       path: `/past_meetings/${meetingId}/instances`,
     })
   }
-  const UpdateMeetingSurvey = function (meetingId: string, params: UpdateMeetingSurveyParams) {
+  const UpdateMeetingSurvey = function (meetingId: string, body: UpdateMeetingSurveyBody) {
     return zoomRequest<{}>({
       method: 'PATCH',
       path: `/meetings/${meetingId}/survey`,
-      body: params,
+      body: body,
     })
   }
 
