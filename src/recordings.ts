@@ -1,5 +1,5 @@
-import { RecordingMeeting } from './common'
-import request from './util/request'
+import { RecordingMeeting } from './common.js'
+import request from './util/request.js'
 
 export type GetAccountRecordingsParams = {
   page_size?: number

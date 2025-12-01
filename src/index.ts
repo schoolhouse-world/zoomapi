@@ -1,14 +1,14 @@
-import meetings from './meetings'
-import metrics from './metrics'
-import recordings from './recordings'
-import reports from './reports'
-import users from './users'
-import webinars from './webinars'
-import webhooks from './webhooks'
-import oauth from './oauth'
+import meetings from './meetings.js'
+import metrics from './metrics.js'
+import recordings from './recordings.js'
+import reports from './reports.js'
+import users from './users.js'
+import webinars from './webinars.js'
+import webhooks from './webhooks.js'
+import oauth from './oauth.js'
 
-import { ZoomOptions } from './common'
-import request from './util/request'
+import { ZoomOptions } from './common.js'
+import request from './util/request.js'
 
 export default function (zoomApiOpts: ZoomOptions) {
   const zoomRequest = request(zoomApiOpts)
@@ -25,12 +25,12 @@ export default function (zoomApiOpts: ZoomOptions) {
   }
 }
 
-export * from './common'
-export * from './meetings'
-export * from './metrics'
-export * from './recordings'
-export * from './reports'
-export * from './users'
-export * from './webhooks'
-export * from './webinars'
-export * from './oauth'
+export * from './common.js'
+export * from './meetings.js'
+export * from './metrics.js'
+export * from './recordings.js'
+export * from './reports.js'
+export * from './users.js'
+export * from './webhooks.js'
+export * from './webinars.js'
+export * from './oauth.js'

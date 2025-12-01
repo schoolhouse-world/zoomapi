@@ -1,7 +1,7 @@
 import https from 'https'
 import jwt from 'jsonwebtoken'
-import type { ZoomOptions, ZoomJWTOptions, ZoomOAuthOptions, OauthTokenResponse } from '../'
-import ZoomError from './ZoomError'
+import type { ZoomOptions, ZoomJWTOptions, ZoomOAuthOptions, OauthTokenResponse } from '../common.js'
+import ZoomError from './ZoomError.js'
 
 const isJWTOptions = function (zoomApiOpts: ZoomOptions): zoomApiOpts is ZoomJWTOptions {
   return 'apiKey' in zoomApiOpts

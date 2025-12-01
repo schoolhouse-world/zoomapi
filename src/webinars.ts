@@ -1,4 +1,4 @@
-import request from './util/request'
+import request from './util/request.js'
 import {
   PaginatedResponse,
   TrackingField,
@@ -16,7 +16,7 @@ import {
   AddRegistrantResponse,
   UpdateRegistrantStatusBody,
   UpdateRegistrantStatusParams,
-} from './common'
+} from './common.js'
 
 /**
  * 5 - Webinar

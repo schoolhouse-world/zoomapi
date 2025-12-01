@@ -1,5 +1,5 @@
-import { PaginatedResponse } from './common'
-import request from './util/request'
+import { PaginatedResponse } from './common.js'
+import request from './util/request.js'
 
 export type GetMeetingParticipantReportsParams = {
   page_size?: number

@@ -1,5 +1,5 @@
-import { MetricMeeting, PaginatedResponse } from './common'
-import request from './util/request'
+import { MetricMeeting, PaginatedResponse } from './common.js'
+import request from './util/request.js'
 
 export type GetMetricsMeetingsParams = {
   type?: 'past' | 'pastOne' | 'live'
