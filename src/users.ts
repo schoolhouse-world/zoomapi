@@ -1,5 +1,5 @@
-import request from './util/request'
-import { PaginatedResponse } from './common'
+import request from './util/request.js'
+import { PaginatedResponse } from './common.js'
 
 /**
  * 1 - Basic.

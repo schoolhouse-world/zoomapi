@@ -1,7 +1,7 @@
 import https from 'https'
-import getAuthToken from './getAuthToken'
-import { ZoomOptions } from '../'
-import ZoomError from './ZoomError'
+import getAuthToken from './getAuthToken.js'
+import { ZoomOptions } from '../common.js'
+import ZoomError from './ZoomError.js'
 
 const BASE_URL = 'api.zoom.us'
 const API_VERSION = '/v2'

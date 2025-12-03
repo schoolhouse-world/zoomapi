@@ -1,8 +1,15 @@
 {
   "name": "@schoolhouse/zoomapi",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    }
+  },
   "description": "NodeJS library for working with the Zoom API.",
   "repository": {
     "type": "git",
@@ -24,7 +31,7 @@
     "prepare": "npm run eslint && npm run clean && npm run build"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "dependencies": {
     "jsonwebtoken": "^8.5.1"

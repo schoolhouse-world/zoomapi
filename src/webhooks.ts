@@ -1,6 +1,6 @@
-import { WebinarDetails } from './webinars'
-import { Meeting } from './meetings'
-import { Registrant, ZoomOptions } from './common'
+import { WebinarDetails } from './webinars.js'
+import { Meeting } from './meetings.js'
+import { Registrant, ZoomOptions } from './common.js'
 import { IncomingHttpHeaders } from 'http'
 import crypto from 'crypto'
 
