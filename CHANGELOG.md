@@ -1,3 +1,6 @@
+### 1.0.3
+- Use `nodenext` for module system
+
 ### 1.0.2
 - Add `UpdateMeetingSurvey`
 
